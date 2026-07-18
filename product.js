@@ -1,26 +1,39 @@
 const products = {
+  
     1: {
-        name: "Rani Pink Floral Cord Set",
-        price: "₹749",
-        image: "images/rani pink tops.jpeg",
-        sizes:["M", "L", "XL"]
-    },
-    2: {
         name: "Pink Floral Cord Set",
         price: "₹749",
         image: "images/floral pink cord set.jpeg",
         sizes:["M", "L", "XL"]
     },
-    3: {
+    2: {
         name: "Black Floral Cord Set",
         price: "₹749",
         image: "images/floral black cord set.jpeg",
         sizes:[ "M", "L", "XL"]
     },
-    4: {
+    3: {
         name: "Burnt Orange Floral Cord Set",
         price: "₹749",
         image: "images/burnt orange cord set.jpeg",
+        sizes:["M", "L", "XL"]
+    },
+      4: {
+        name: "Rani Pink Floral Cord Set",
+        price: "₹749",
+        image: "images/rani pink cord set.jpeg",
+        sizes:["M", "L", "XL"]
+    },
+    5: {
+        name: "Coral Red Floral Print V-Neck Cord Set",
+        price: "₹749",
+        image: "images/Coral red floral print V-neck.jpeg",
+        sizes:["M", "L", "XL"]
+    },
+    6: {
+        name: "Royal blue and off-white floral print v-neck Cord Set",
+        price: "₹749",
+        image: "images/Royal blue v-neck.jpeg",
         sizes:["M", "L", "XL"]
     }
 };

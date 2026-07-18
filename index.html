@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isai Fashions</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+   <div class="logo">
+    <img src="images/logo.png" alt="Isai Fashions">
+</div>
+
+    <a href="#home">Home</a>
+    <a href="#featured">Collections</a>
+    <a href="#about">About Us</a>
+    <a href="#bestsellers">Best Sellers</a>
+    <a href="#contact">Contact</a>
+</nav>
+</header>
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Wear Confidence.<br>Wear Isai.</h1>
+
+        <p>
+            Discover elegant single-piece tops and stylish cord sets curated for modern women.
+        </p>
+
+        <a href="#" class="btn">Shop Now</a>
+
+    </div>
+
+</section>
+
+<section class="featured" id="featured">
+
+<h2>Featured Collection</h2>
+<div class="filter-buttons">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('tops')">Tops</button>
+    <button onclick="filterProducts('cordset')">Cord Sets</button>
+</div>
+<div class="search-section">
+<input 
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search products..."
+        onkeyup="searchProducts()">
+
+    
+
+</div>
+
+
+<div class="cards">
+
+<div class="card" data-category="tops">
+    <span class="badge">NEW</span>
+    <img src="images/rani pink tops.jpeg" alt="Rani Pink Floral Cord Set">
+    <h3>Rani Pink Floral tops</h3>
+    <p>₹749</p>
+    <a href="product.html?id=1">
+        <button>View Product</button>
+    </a>
+</div>
+
+<div class="card" data-category="cordset">
+    <span class="badge">NEW</span>
+    <img src="images/floral pink cord set.jpeg" alt="Pink Floral Cord Set">
+    <h3>Pink Floral Cord Set</h3>
+    <p>₹749</p>
+    <a href="product.html?id=2">
+        <button>View Product</button>
+    </a>
+</div>
+
+<div class="card" data-category="cordset">
+    <span class="badge">NEW</span>
+    <img src="images/floral black cord set.jpeg" alt="Black Floral Cord Set">
+    <h3>Black Floral Cord Set</h3>
+    <p>₹749</p>
+    <a href="product.html?id=3">
+        <button>View Product</button>
+    </a>
+</div>
+
+<div class="card" data-category="cordset">
+    <span class="badge">NEW</span>
+    <img src="images/burnt orange cord set.jpeg" alt="Burnt Orange Floral Cord Set">
+    <h3>Burnt Orange Floral Cord Set</h3>
+    <p>₹749</p>
+    <a href="product.html?id=4">
+        <button>View Product</button>
+    </a>
+</div>
+</section>
+
+<section class="about" id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        At Isai Fashions, we believe that fashion is a reflection of confidence and individuality.
+        Our mission is to bring elegant, comfortable, and affordable styles to women across India.
+        From trendy single-piece tops to stylish cord sets, every collection is carefully curated with love and attention to detail.
+    </p>
+
+    <p>
+        Thank you for being a part of the Isai Fashions family. We are excited to be a part of your fashion journey!
+    </p>
+
+</section>
+
+<section id="bestsellers">
+    <h2>Best Sellers</h2>
+
+    <div class="cards">
+
+        <!-- Copy your best product cards here -->
+
+        <div class="card">
+            <span class="badge">BEST SELLER</span>
+            <img src="images/floral black cord set.jpeg">
+            <h3>Black Floral Cord Set</h3>
+            <p>₹749</p>
+        </div>
+
+        <div class="card">
+            <span class="badge">BEST SELLER</span>
+            <img src="images/floral pink cord set.jpeg">
+            <h3>Pink Floral Cord Set</h3>
+            <p>₹749</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="why">
+
+<h2>Why Shop With Us?</h2>
+
+<div class="features">
+
+<div>
+<h3>Premium Quality</h3>
+<p>Soft, comfortable fabrics designed for everyday elegance.</p>
+</div>
+
+<div>
+<h3>Affordable Prices</h3>
+<p>Latest fashion without compromising your budget.</p>
+</div>
+
+<div>
+<h3>Fast Shipping</h3>
+<p>Reliable delivery across India.</p>
+</div>
+
+<div>
+<h3>Trusted Brand</h3>
+<p>Your satisfaction is our top priority.</p>
+</div>
+
+</div>
+
+</section>
+<section class="testimonials">
+
+    <h2>What Our Customers Say</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <p>"Beautiful quality and perfect fit. I loved my order!"</p>
+            <h4>- Priya</h4>
+        </div>
+
+        <div class="card">
+            <p>"The cord set looks exactly like the pictures. Highly recommended!"</p>
+            <h4>- Aishwarya</h4>
+        </div>
+
+        <div class="card">
+            <p>"Affordable, trendy, and fast delivery. Will shop again."</p>
+            <h4>- Nivetha</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="instagram">
+
+    <h2>Follow Us on Instagram</h2>
+
+    <div class="cards">
+
+        <a href="https://www.instagram.com/house_ofisai" target="_blank" class="card" aria-label="Open Instagram gallery">
+            <img src="images/rani pink tops.jpeg" alt="Instagram Post 1">
+        </a>
+
+        <a href="https://www.instagram.com/house_ofisai" target="_blank" class="card" aria-label="Open Instagram gallery">
+            <img src="images/floral pink cord set.jpeg" alt="Instagram Post 2">
+        </a>
+
+        <a href="https://www.instagram.com/house_ofisai" target="_blank" class="card" aria-label="Open Instagram gallery">
+            <img src="images/floral black cord set.jpeg" alt="Instagram Post 3">
+        </a>
+
+    </div>
+
+    <div class="instagram-cta">
+        <a href="https://www.instagram.com/house_ofisai" target="_blank" class="btn instagram-btn">Visit Instagram</a>
+    </div>
+
+</section>
+
+<section class="newsletter">
+
+    <h2>Stay Updated</h2>
+
+    <p>Join our whatsapp group to receive updates on new arrivals and exclusive offers.</p>
+
+    <div class="newsletter-box">
+    <a href="https://whatsapp.com/channel/0029Vb8IHD8HltY34b58w10F"
+       target="_blank">
+        <button class="btn">
+            Join Our WhatsApp Group
+        </button>
+    </a>
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+    <h2>CONTACT US</h2>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:hello@isaifashions.com">
+            hello@isaifashions.com
+        </a>
+    </p>
+
+    <p>
+        <strong>WhatsApp:</strong>
+        <a href="https://wa.me/916381288411" target="_blank">
+            +91 6381288411
+        </a>
+    </p>
+
+
+
+    <p>
+        <strong> Instagram: </strong>
+        <a href="https://www.instagram.com/house_ofisai" target="_blank">
+          @house_ofisai
+        </a>
+    </p>
+
+</section>
+    <section>
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+            <h3>ISAI FASHIONS</h3>
+            <p>Elegant fashion for every occasion.</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Customer Care</h4>
+            <ul>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p style="text-align:center;">
+        © 2026 Isai Fashions. All Rights Reserved.
+    </p>
+
+</footer> 
+<a href="https://wa.me/6383351495"
+class="whatsapp-float" target="_blank">
+<img src="images/whatsapp.jpeg" alt="WhatsApp">
+</a>
+<script src="script.js"></script>
+</body>
+</html>

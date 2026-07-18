@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
+/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fffaf8;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 4%;
+    background: #C89B3C;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-family:'Cinzel',serif;
+    font: size 40px;
+    font-weight:700;
+    letter-spacing:4px;
+    color:#C89B3C;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+    margin-left:30px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#C89B3C;
+}
+
+/* Hero Section */
+
+.hero{
+    height:90vh;
+    background: #fdf8f2;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,.45);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-family:'Cinzel',serif;
+    font-size:68px;
+    color:#2b2b2b;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:35px;
+    color:#444;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 40px;
+    background:#C89B3C;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#a97d28;
+    transform:translateY(-3px);
+}
+
+/* Sections */
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:15px;
+    font-family:'Cinzel',serif;
+    font-size:42px;
+    color:#C89B3C;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:20px 0 10px;
+    font-size:24px;
+}
+
+.card p{
+    padding:0 20px 20px;
+}
+
+.card button{
+    margin-bottom:20px;
+    padding:12px 30px;
+    border:none;
+    background:#C89B3C;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#a97d28;
+}
+
+/* Why Choose Us */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.features div{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+/* Testimonials */
+
+.testimonials{
+    background:#fff5ef;
+}
+
+.testimonials .card{
+    padding:30px;
+}
+
+.testimonials p{
+    font-style:italic;
+    color:#555;
+    margin-bottom:20px;
+}
+
+.testimonials h4{
+    color:#C89B3C;
+}
+
+/* Instagram */
+
+.instagram{
+    background:#ffffff;
+}
+
+.instagram .cards a.card{
+    display:block;
+    text-decoration:none;
+}
+
+.instagram img{
+    height:320px;
+    transition:.4s;
+}
+
+.instagram img:hover{
+    transform:scale(1.05);
+}
+
+.instagram-cta{
+    text-align:center;
+    margin-top:30px;
+}
+
+.instagram-btn{
+    display:inline-block;
+    margin-top:10px;
+}
+
+/* Newsletter */
+
+.newsletter{
+    text-align:center;
+    background:#fdf2e9;
+}
+
+.newsletter p{
+    margin-bottom:30px;
+    color:#666;
+}
+
+.newsletter form{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.newsletter input{
+    width:350px;
+    max-width:90%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:40px;
+    outline:none;
+    font-size:16px;
+}
+
+.newsletter button{
+    padding:15px 35px;
+    background:#C89B3C;
+    color:white;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.newsletter button:hover{
+    background:#a97d28;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    padding:60px 8% 30px;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+}
+
+.footer-content h3,
+.footer-content h4{
+    color:#C89B3C;
+    margin-bottom:20px;
+}
+
+.footer-content ul{
+    list-style:none;
+}
+
+.footer-content ul li{
+    margin-bottom:12px;
+}
+
+.footer-content ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-content ul li a:hover{
+    color:#C89B3C;
+}
+
+footer hr{
+    margin:40px 0 20px;
+    border:0;
+    border-top:1px solid #555;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+header{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+    height:75vh;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.logo{
+    font-size:28px;
+}
+
+section h2{
+    font-size:32px;
+}
+
+.card img{
+    height:260px;
+}
+
+}
+
+/* Smooth scrolling */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Animation */
+
+.card{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+.whatsapp-float{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50%;
+    background: #25D366;
+    align-items : center;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    box-shadow : 0 5px 15px rgba(0,0,0,0.3);
+    z-index : 1000;
+}
+.whatsapp-float img{
+    width : 38px;
+    height: 38px;
+}
+.whatsapp-float:hover{
+    transform: scale(1.1);
+    background: #20ba5a;
+}
+.product-page{
+display:flex;
+flex-wrap:wrap;
+gap:50px;
+padding:60px;
+align-items:center;
+}
+
+.product-image img{
+width:450px;
+border-radius:15px;
+}
+
+.product-details{
+max-width:500px;
+}
+
+.product-details h2{
+font-size:35px;
+margin-bottom:15px;
+}
+
+.product-details h3{
+color:#d63384;
+font-size:30px;
+margin-bottom:20px;
+}
+
+.sizes button{
+padding:12px 20px;
+margin:5px;
+cursor:pointer;
+border:1px solid #333;
+background:white;
+}
+
+.sizes button:hover{
+background:black;
+color:white;
+}
+.order-btn{
+    background:#c79a2b;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.order-btn:hover{
+    background:#a87d1f;
+}
+.badge{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:#e91e63;
+    color:white;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.card{
+    position:relative;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+.contact a{
+    color:#c7921e;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+.search-section{
+    text-align:center;
+    padding:10px 0;
+    margin-bottom: 40px;
+}
+
+#searchInput{
+    width:60%;
+    max-width:500px;
+    padding:15px;
+    border:2px solid #d4af37;
+    border-radius:30px;
+    font-size:16px;
+    outline:none;
+}
+
+#searchInput:focus{
+    box-shadow:0 0 10px rgba(212,175,55,0.5);
+}
+.featured .cards{
+    margin-top: 60px;
+}
+.filter-buttons{
+    text-align:center;
+    margin:20px 0;
+}
+
+.filter-buttons button{
+    padding:12px 25px;
+    margin:8px;
+    border:none;
+    border-radius:30px;
+    background:#C89B3C;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.filter-buttons button:hover{
+    background:#a97d28;
+}
+.about{
+    text-align:center;
+    background:#fff5ef;
+}
+
+.about p{
+    max-width:800px;
+    margin:20px auto;
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+}
+.logo img{
+    width:auto;
+    height:70px;
+}

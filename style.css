@@ -410,8 +410,8 @@ transform:translateY(0);
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 25px;
-    right: 25px;
+    bottom: 90px;
+    right: 20px;
     border-radius: 50%;
     background: #25D366;
     align-items : center;
@@ -419,7 +419,7 @@ transform:translateY(0);
     justify-content : center;
     align-items : center;
     box-shadow : 0 5px 15px rgba(0,0,0,0.3);
-    z-index : 1000;
+    z-index : 1100;
 }
 .whatsapp-float img{
     width : 38px;
@@ -570,4 +570,95 @@ color:white;
 .logo img{
     width:auto;
     height:70px;
+}
+nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 14px 0;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.12);
+    z-index: 1000;
+}
+
+nav a{
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #c9a13a;
+}
+
+body{
+    padding-bottom: 85px;
+}
+/* Header */
+header{
+    width:100%;
+    background:#c79a35;
+    padding:15px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo img{
+    width:140px;
+    height:auto;
+}
+
+/* Premium Bottom Navigation */
+nav{
+    position:fixed;
+    bottom:15px;
+    left:50%;
+    transform:translateX(-50%);
+    width:95%;
+    max-width:500px;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px 10px;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.12);
+    z-index:1000;
+}
+
+nav a{
+    text-decoration:none;
+    color:#555;
+    font-size:11px;
+    font-weight:600;
+    padding:7px 8px;
+    border-radius:20px;
+    transition:0.3s;
+    white-space: nowrap;
+    text-align: center;
+}
+
+nav a.active{
+    background:#c79a35;
+    color:#fff;
+    
+}
+
+nav a:hover{
+    color:#c79a35;
+}
+
+body{
+    padding-bottom:100px;
 }

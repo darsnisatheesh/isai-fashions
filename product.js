@@ -65,6 +65,19 @@ const products = {
         sizes:["M", "L", "XL"]
     },
 
+      11: {
+        name: "Yellow Bliss Everyday Top",
+        price: "₹359",
+        image: "images/yellow.jpeg",
+        sizes:["M", "L", "XL"]
+    },
+
+       12: {
+        name: "Aqua Blue Floral Everyday Top",
+        price: "₹359",
+        image: "images/sky blue.jpeg",
+        sizes:["M", "L", "XL"]
+    }
 
 };
 
